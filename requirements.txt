@@ -4,3 +4,4 @@ uvicorn
 pandas
 Jinja2
 starlette
+multipart
