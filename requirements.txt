@@ -5,3 +5,4 @@ pandas
 Jinja2
 starlette
 python-multipart
+scikit-learn
