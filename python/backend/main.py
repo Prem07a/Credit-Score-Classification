@@ -64,7 +64,7 @@ async def predict(request: Request,
 }
 
     df = pd.DataFrame(df)
-    model = joblib.load("./model/model.joblib")
+    model = joblib.load("./model/model_v2.joblib")
     credit_Score = int(model.predict(df)[0])
     score = {0: "Good", 1: "Standard", 2: "Poor"}
     Credit_Grade = score[credit_Score]
