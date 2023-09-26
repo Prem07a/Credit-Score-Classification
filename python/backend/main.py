@@ -21,9 +21,9 @@ async def get_form(request: Request):
     Returns:
         TemplateResponse: HTML template response.
     """
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse("credit.html", {"request": request})
 
-@app.post('/predict')
+@app.post('/credit')
 async def predict(request: Request, 
                   Annual_Income:float=Form(...),
                   Monthly_Inhand_Salary:float=Form(...),
