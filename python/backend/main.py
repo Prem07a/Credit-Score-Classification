@@ -98,8 +98,8 @@ async def hire_me(request: Request):
 
 @app.post('/thankyou')
 async def sendMail(request: Request, Name:str=Form(...), Email:str=Form(...), Message:str = Form(...)):
-    with open(f"data/Mail/{Name}.txt", "w") as f:
-        f.write(f"Name: {Name}\n")
+    with open(f"data/Mail/info.txt", "a") as f:
+        f.write(f"\n\nName: {Name}\n")
         f.write(f"Email: {Email}\n")
         f.write(f"Message:\n{Message}\n")
     return templates.TemplateResponse("thankyou.html", {"request": request})    
