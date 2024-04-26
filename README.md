@@ -50,15 +50,35 @@ FastAPI, a modern web framework for building APIs with Python, was employed to c
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/credit-score-predictor.git
+   https://github.com/Prem07a/Credit-Score-Classification.git
    cd credit-score-predictor
    ```
+2. Make Vitrual Env
+   ```shell
+   python -m venv venv
+   ```
 
-2. Run the FastAPI application:
+3. Activate vitrual env
+(Windows/Linux)
+   ```shell
+   .\venv\Scripts\activate
+   ```
+(Mac)
+   ```shell
+   source venv/bin/activate
+   ```
+
+4. Install Requirements
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+5. Run the FastAPI application:
 
    ```shell
-   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+   uvicorn python.backend.main:app --reload
    ```
+
 
 ## Usage
 
