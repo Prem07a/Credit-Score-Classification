@@ -59,11 +59,11 @@ FastAPI, a modern web framework for building APIs with Python, was employed to c
    ```
 
 3. Activate vitrual env
-(Windows/Linux)
+- (Windows/Linux)
    ```shell
    .\venv\Scripts\activate
    ```
-(Mac)
+- (Mac)
    ```shell
    source venv/bin/activate
    ```
